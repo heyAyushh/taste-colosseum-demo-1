@@ -1,0 +1,25 @@
+{
+  "name": "Taste Reward Token",
+  "symbol": "TASTE",
+  "description": "Direct scan reward token for the taste.fun local demo. Scanning the seeded Diet Coke batch releases a fixed payout from a brand-funded pool.",
+  "image": "/token/taste-logo.svg",
+  "external_url": "/",
+  "attributes": [
+    {
+      "trait_type": "demo",
+      "value": "direct-scan-claim"
+    },
+    {
+      "trait_type": "claim_rule",
+      "value": "one claim per wallet"
+    },
+    {
+      "trait_type": "product",
+      "value": "Diet Coke 330ml"
+    },
+    {
+      "trait_type": "lot",
+      "value": "DC-0426-BAD-QC"
+    }
+  ]
+}

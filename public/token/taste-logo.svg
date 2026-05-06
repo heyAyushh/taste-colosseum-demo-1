@@ -1,0 +1,20 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="taste-ring" x1="88" y1="88" x2="424" y2="424" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F5D079"/>
+      <stop offset="1" stop-color="#C98D27"/>
+    </linearGradient>
+    <linearGradient id="taste-core" x1="128" y1="116" x2="384" y2="396" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#191612"/>
+      <stop offset="1" stop-color="#090909"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="#050505"/>
+  <circle cx="256" cy="256" r="188" fill="url(#taste-core)" stroke="url(#taste-ring)" stroke-width="24"/>
+  <path d="M170 206H342" stroke="#F5D079" stroke-width="22" stroke-linecap="round"/>
+  <path d="M199 256H313" stroke="#F5D079" stroke-width="22" stroke-linecap="round"/>
+  <path d="M222 306H290" stroke="#F5D079" stroke-width="22" stroke-linecap="round"/>
+  <path d="M173 162C198 138 227 126 256 126C285 126 314 138 339 162" stroke="#C98D27" stroke-width="18" stroke-linecap="round"/>
+  <path d="M173 350C198 374 227 386 256 386C285 386 314 374 339 350" stroke="#C98D27" stroke-width="18" stroke-linecap="round"/>
+  <text x="256" y="444" text-anchor="middle" fill="#F5D079" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="10">TASTE</text>
+</svg>
