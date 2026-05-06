@@ -2,6 +2,8 @@
 
 Standalone `taste.fun` scan-claim demo.
 
+This demo was extracted from [`makrozoia-space/taste-core`](https://github.com/makrozoia-space/taste-core) for a focused Colosseum Demo 1 repo.
+
 This repo contains:
 
 - a React app where scanning the seeded Diet Coke batch unlocks a direct `$TASTE` claim
