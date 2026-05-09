@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
-    "check": "tsc --noEmit -p tsconfig.json"
+    "check": "tsc --noEmit -p tsconfig.json",
+    "bootstrap:exe-surfpool": "bash scripts/exe-surfpool-bootstrap.sh",
+    "seed:surfpool": "node scripts/seed-surfpool-demo.mjs"
   },
   "dependencies": {
     "@coral-xyz/anchor": "0.32.1",

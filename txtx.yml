@@ -1,0 +1,10 @@
+---
+name: Taste Colosseum Demo
+id: taste-colosseum-demo
+runbooks:
+  - name: exe.dev Surfpool Deployment
+    id: exe-surfpool-deployment
+    description: Deploy the Taste demo programs into the exe.dev Surfpool RPC
+    location: runbooks/deployment/main.tx
+environments:
+  surfnet: {}

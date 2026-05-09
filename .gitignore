@@ -2,4 +2,9 @@ node_modules/
 dist/
 .npm-cache/
 programs/*/target/
+.exe/
+.tmp/
+.surfpool/
+target/
+api/taste_protocol.idl.json
 .DS_Store

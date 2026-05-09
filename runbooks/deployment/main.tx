@@ -1,0 +1,35 @@
+################################################################
+# exe.dev Surfpool bootstrap deployment
+################################################################
+
+addon "svm" {
+    rpc_api_url = input.rpc_api_url
+    network_id = input.network_id
+}
+
+action "deploy_taste_protocol" "svm::setup_surfnet" {
+    description = "Load taste_protocol into the exe.dev Surfpool RPC"
+    rpc_api_url = input.rpc_api_url
+    deploy_program {
+        program_id = "FdxAfXgWTddXjDFL3TSt7wYEv19AM5h6e4ntHBjmzKbt"
+        binary_path = ".exe/taste-core/target/deploy/taste_protocol.so"
+    }
+}
+
+action "deploy_taste_scan_claim" "svm::setup_surfnet" {
+    description = "Load taste_scan_claim into the exe.dev Surfpool RPC"
+    rpc_api_url = input.rpc_api_url
+    deploy_program {
+        program_id = "9KrqHV2a2YqUaDkEP3jJ6zYxoyMNQgPaeskQxuWRuNy"
+        binary_path = "./target/deploy/taste_scan_claim.so"
+    }
+}
+
+action "deploy_metaplex_token_metadata" "svm::setup_surfnet" {
+    description = "Load Metaplex Token Metadata into the exe.dev Surfpool RPC"
+    rpc_api_url = input.rpc_api_url
+    deploy_program {
+        program_id = "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s"
+        binary_path = ".exe/metaplex_token_metadata.so"
+    }
+}
