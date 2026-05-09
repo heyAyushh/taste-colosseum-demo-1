@@ -12,7 +12,7 @@ action "deploy_taste_protocol" "svm::setup_surfnet" {
     rpc_api_url = input.rpc_api_url
     deploy_program {
         program_id = "FdxAfXgWTddXjDFL3TSt7wYEv19AM5h6e4ntHBjmzKbt"
-        binary_path = ".exe/taste-core/target/deploy/taste_protocol.so"
+        binary_path = "./target/deploy/taste_protocol.so"
     }
 }
 
@@ -30,6 +30,6 @@ action "deploy_metaplex_token_metadata" "svm::setup_surfnet" {
     rpc_api_url = input.rpc_api_url
     deploy_program {
         program_id = "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s"
-        binary_path = ".exe/metaplex_token_metadata.so"
+        binary_path = "./target/deploy/metaplex_token_metadata.so"
     }
 }

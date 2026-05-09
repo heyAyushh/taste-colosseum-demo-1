@@ -87,14 +87,18 @@ prepare_taste_core() {
 build_programs() {
   npm --prefix "${CORE_DIR}" run build:program
   anchor build --program-name taste_scan_claim
+  mkdir -p target/deploy
+  cp "${CORE_DIR}/target/deploy/taste_protocol.so" target/deploy/taste_protocol.so
+  cp "${CORE_DIR}/target/deploy/taste_protocol-keypair.json" target/deploy/taste_protocol-keypair.json
 }
 
 prepare_metaplex_program() {
-  if [ -f "${WORK_DIR}/metaplex_token_metadata.so" ]; then
+  mkdir -p target/deploy
+  if [ -f "target/deploy/metaplex_token_metadata.so" ]; then
     return
   fi
 
-  solana program dump "${METAPLEX_PROGRAM_ID}" "${WORK_DIR}/metaplex_token_metadata.so" \
+  solana program dump "${METAPLEX_PROGRAM_ID}" "target/deploy/metaplex_token_metadata.so" \
     --url https://api.mainnet-beta.solana.com
 }
 
